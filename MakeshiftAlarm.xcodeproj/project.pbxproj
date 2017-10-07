@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B8C469E2192B74F8176221F /* Pods_MakeshiftAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A6E4A70AEFE39F1B392D13 /* Pods_MakeshiftAlarm.framework */; };
 		CE296B161F88E76D00020870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE296B151F88E76D00020870 /* AppDelegate.swift */; };
 		CE296B181F88E76D00020870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE296B171F88E76D00020870 /* ViewController.swift */; };
 		CE296B1B1F88E76D00020870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE296B191F88E76D00020870 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CC6662048167D13525833FF /* Pods-MakeshiftAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeshiftAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-MakeshiftAlarm/Pods-MakeshiftAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		52A6E4A70AEFE39F1B392D13 /* Pods_MakeshiftAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeshiftAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8121F5C418AE21C567C7F38 /* Pods-MakeshiftAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeshiftAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MakeshiftAlarm/Pods-MakeshiftAlarm.debug.xcconfig"; sourceTree = "<group>"; };
 		CE296B121F88E76D00020870 /* MakeshiftAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeshiftAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE296B151F88E76D00020870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE296B171F88E76D00020870 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8C469E2192B74F8176221F /* Pods_MakeshiftAlarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1254F983C7A4209A6F2E4D40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52A6E4A70AEFE39F1B392D13 /* Pods_MakeshiftAlarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6A6ED6E41D9EBB72057E69D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8121F5C418AE21C567C7F38 /* Pods-MakeshiftAlarm.debug.xcconfig */,
+				4CC6662048167D13525833FF /* Pods-MakeshiftAlarm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE296B091F88E76D00020870 = {
 			isa = PBXGroup;
 			children = (
 				CE296B141F88E76D00020870 /* MakeshiftAlarm */,
 				CE296B131F88E76D00020870 /* Products */,
+				A6A6ED6E41D9EBB72057E69D /* Pods */,
+				1254F983C7A4209A6F2E4D40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE296B241F88E76D00020870 /* Build configuration list for PBXNativeTarget "MakeshiftAlarm" */;
 			buildPhases = (
+				BFAB5D1C29B8F47B5C504735 /* [CP] Check Pods Manifest.lock */,
 				CE296B0E1F88E76D00020870 /* Sources */,
 				CE296B0F1F88E76D00020870 /* Frameworks */,
 				CE296B101F88E76D00020870 /* Resources */,
+				24179846FC0DDAAB320437F1 /* [CP] Embed Pods Frameworks */,
+				377CBF6974EE3596B8E80698 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24179846FC0DDAAB320437F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakeshiftAlarm/Pods-MakeshiftAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		377CBF6974EE3596B8E80698 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakeshiftAlarm/Pods-MakeshiftAlarm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFAB5D1C29B8F47B5C504735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE296B0E1F88E76D00020870 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		CE296B251F88E76D00020870 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8121F5C418AE21C567C7F38 /* Pods-MakeshiftAlarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FV22LUXAQ4;
@@ -274,6 +350,7 @@
 		};
 		CE296B261F88E76D00020870 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC6662048167D13525833FF /* Pods-MakeshiftAlarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FV22LUXAQ4;
